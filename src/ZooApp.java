@@ -18,6 +18,16 @@ public class ZooApp {
             animal.makeSound();
         }
 
+        for (Animal animal : animals) {
+            if (animal instanceof Dolfin d){
+                d.swim();
+            }
+            else if  (animal instanceof Krow k){
+                k.fly();
+            }
+
+        }
+
     }
 
     private void initList() {

@@ -15,6 +15,6 @@ public class Krow extends Animal implements Flyable{
 
     @Override
     public void fly() {
-
+        System.out.println(getName() + " flyger");
     }
 }
