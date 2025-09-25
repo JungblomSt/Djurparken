@@ -27,6 +27,13 @@ public class ZooApp {
             }
 
         }
+        for (Animal animal : animals) {
+            if (animal.isAdult()){
+                System.out.println(animal.getName() + " är vuxen");
+            }
+            else
+                System.out.println(animal.getName() + "är en bäbis");
+        }
 
     }
 

@@ -16,6 +16,15 @@ public abstract class Animal {
 
     public abstract void eat();
 
+    public boolean isAdult(){
+        if(age >= 5){
+        return true;
+        }
+        return false;
+    }
+
+
+
     //Getters och setters
     public String getName() {
         return name;
