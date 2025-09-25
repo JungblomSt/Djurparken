@@ -1,7 +1,8 @@
 public class Dolfin extends Animal implements Swimmable{
 
-    public Dolfin(String name) {
-        super(name);
+    public Dolfin(String name,  int age) {
+
+        super(name, age);
     }
 
     @Override

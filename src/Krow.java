@@ -1,6 +1,7 @@
 public class Krow extends Animal implements Flyable{
-    public Krow(String name) {
-        super(name);
+    public Krow(String name, int age) {
+
+        super(name, age);
     }
     @Override
     public void makeSound() {

@@ -31,11 +31,11 @@ public class ZooApp {
     }
 
     private void initList() {
-        animals.add(new Dog("Ludde"));
-        animals.add(new Dog("Molly"));
-        animals.add(new Dolfin("Nemo"));
-        animals.add(new Dolfin("Doris"));
-        animals.add(new Krow("Kråkan"));
-        animals.add(new Krow("Corvux"));
+        animals.add(new Dog("Ludde", 1));
+        animals.add(new Dog("Molly", 5));
+        animals.add(new Dolfin("Nemo", 3));
+        animals.add(new Dolfin("Doris", 8));
+        animals.add(new Krow("Kråkan", 2));
+        animals.add(new Krow("Corvux", 10));
     }
 }
