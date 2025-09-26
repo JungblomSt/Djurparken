@@ -5,7 +5,7 @@ public class Eagle extends Animal implements Flyable{
     }
     @Override
     public void makeSound() {
-        System.out.println(getName() + " låter inte!");
+        System.out.println(getName() + " låter aaaaahhhh");
 
     }
     @Override

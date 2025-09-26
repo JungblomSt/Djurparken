@@ -8,20 +8,18 @@ public class ZooApp {
         initList();
         run();
 
-
-
     }
     private void run(){
 
-        for (Animal animal : animals) {
-            animal.eat();
-            animal.makeSound();
-            move(animal);
-            printPerformTrickIfAdult(animal);
+        for (Animal a : animals) {
+            a.eat();
+            a.makeSound();
+            move(a);
+            printPerformTrickIfAdult(a);
+            printIsAdult(a);
             System.out.println();
         }
 
-//        printIsAdult();
     }
 
     private static void move(Animal animal) {
@@ -43,14 +41,12 @@ public class ZooApp {
             System.out.println(animal.getName() + " har inte lärt sig trick, ännu");
     }
 
-    private void printIsAdult() {
-        for (Animal animal : animals) {
-            if (animal.isAdult()){
-                System.out.println(animal.getName() + " är vuxen");
-            }
-            else
-                System.out.println(animal.getName() + "är en bäbis");
+    private void printIsAdult(Animal animal) {
+        if (animal.isAdult()){
+            System.out.println(animal.getName() + " är vuxen");
         }
+        else
+            System.out.println(animal.getName() + " är en bäbis");
     }
 
     private void initList() {
