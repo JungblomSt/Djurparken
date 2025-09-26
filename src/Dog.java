@@ -1,4 +1,4 @@
-public class Dog extends Animal {
+public class Dog extends Animal implements Trainable {
 
     public Dog(String name, int age) {
 
@@ -15,5 +15,10 @@ public class Dog extends Animal {
     public void eat() {
         System.out.println("Hunden " + getName() + " äter hundmat och en o annan köttbullemacka");
 
+    }
+
+    @Override
+    public void performTrick() {
+        System.out.println("Hunden snurrar och dansar");
     }
 }

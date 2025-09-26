@@ -1,4 +1,4 @@
-public class Dolfin extends Animal implements Swimmable{
+public class Dolfin extends Animal implements Swimmable, Trainable{
 
     public Dolfin(String name,  int age) {
 
@@ -20,5 +20,10 @@ public class Dolfin extends Animal implements Swimmable{
     @Override
     public void swim() {
         System.out.println(getName() + " simmar i vattnet");
+    }
+
+    @Override
+    public void performTrick() {
+        System.out.println("Delfinen slår i en boll i ett basketmål");
     }
 }

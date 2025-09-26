@@ -18,6 +18,22 @@ public class ZooApp {
             animal.makeSound();
         }
 
+        move();
+//        printIsAdult();
+        
+    }
+
+    private void printIsAdult() {
+        for (Animal animal : animals) {
+            if (animal.isAdult()){
+                System.out.println(animal.getName() + " är vuxen");
+            }
+            else
+                System.out.println(animal.getName() + "är en bäbis");
+        }
+    }
+
+    private void move() {
         for (Animal animal : animals) {
             if (animal instanceof Dolfin d){
                 d.swim();
@@ -27,14 +43,6 @@ public class ZooApp {
             }
 
         }
-        for (Animal animal : animals) {
-            if (animal.isAdult()){
-                System.out.println(animal.getName() + " är vuxen");
-            }
-            else
-                System.out.println(animal.getName() + "är en bäbis");
-        }
-
     }
 
     private void initList() {

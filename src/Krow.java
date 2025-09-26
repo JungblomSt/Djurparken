@@ -1,4 +1,4 @@
-public class Krow extends Animal implements Flyable{
+public class Krow extends Animal implements Flyable, Trainable{
     public Krow(String name, int age) {
 
         super(name, age);
@@ -17,5 +17,10 @@ public class Krow extends Animal implements Flyable{
     @Override
     public void fly() {
         System.out.println(getName() + " flyger");
+    }
+
+    @Override
+    public void performTrick() {
+        System.out.println("Kråkan cyklar");
     }
 }
